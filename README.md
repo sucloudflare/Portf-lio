@@ -10,7 +10,7 @@ Recursos Destacados:
     HTML, CSS, JavaScript: Fundamentos sólidos de desenvolvimento web para
     criar uma interface intuitiva e atraente.
     Em constante evolução: Estou sempre trabalhando para melhorar e adicionar
-    novos projetos ao meu portfólio.
+    novos projetos ao meu portfólio.smile: 💻 🧑‍💻 
     
     Fique atento para as últimas atualizações!
     Futuro Angular: 
