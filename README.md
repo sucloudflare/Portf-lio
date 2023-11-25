@@ -17,7 +17,7 @@ Bem-vindo ao meu repositório de portfólio! 🌟 Aqui, você encontrará uma co
 Estou animado em anunciar que em breve vou atualizar este portfólio usando o framework Angular, trazendo uma experiência ainda mais dinâmica e moderna.
 
 ## Como Visualizar
-1. Clone este repositório: `git clone https://github.com/port-folio/seu-repositorio.git`
+1. Clone este repositório: `git clone https://github.com/sucloudflare/Portf-lio.git`
 2. Abra o arquivo `index.html` no seu navegador.
 
 Sinta-se à vontade para explorar, fornecer feedback e acompanhar meu progresso. Obrigado por visitar!
