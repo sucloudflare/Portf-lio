@@ -1,5 +1,5 @@
 # Portfolio
-![dev](./dev.png)
+![dev](./img.png)
 "Portfolio-Web: HTML, CSS, JS. Em breve, Angular. Explore minha jornada no desenvolvimento web. 💻✨"
 Nome do Projeto: Portfolio-Web
 
