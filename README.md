@@ -1,6 +1,8 @@
 # Portfolio
 ![dev](./img.png)
-"Portfolio-Web: HTML, CSS, JS. Em breve, Angular. Explore minha jornada no desenvolvimento web. 💻✨"
+"Portfolio-Web: HTML, CSS, JS. Em breve, Angular. Explore minha jornada no desenvolvimento web. 
+
+💻✨"
 Nome do Projeto: Portfolio-Web
 
 Descrição: Este é o repositório do meu portfólio pessoal, onde eu demonstro minhas habilidades em desenvolvimento web utilizando HTML, CSS e JavaScript. Atualmente, o site está em constante evolução, e em breve será atualizado para utilizar o framework Angular, proporcionando uma experiência mais dinâmica e interativa.
