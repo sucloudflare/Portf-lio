@@ -493,111 +493,114 @@
       </div>
     </footer>
 
+  <!-- Inclusão da biblioteca Typed.js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- Script JavaScript -->
+<script>
+  // Configuração do Typed.js para animação de texto dinâmico
+  var typed = new Typed("#element", {
+    strings: ["Frontend Engineer", "Web Designer", "Frontend Developer"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    cursorChar: "_",
+    loop: true,
+  });
 
-  
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Frontend Engineer", "Web Designer", "Frontend Developer"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        cursorChar: "_",
-        loop: true,
-      });
+  // Funções para alterar imagens ao passar o mouse
+  function hoverImage1(element) {
+    element.src = "public/HSM_registration_img.jpg";
+  }
 
-  
-      function hoverImage1(element) {
-        element.src = "public/HSM_registration_img.jpg";
+  function unhoverImage1(element) {
+    element.src = "public/HSM_P2.jpg";
+  }
+
+  function hoverImage2(element) {
+    element.src = "public/labourService_about_img.jpg";
+  }
+
+  function unhoverImage2(element) {
+    element.src = "public/labourService_P1.jpg";
+  }
+
+  function hoverImage3(element) {
+    element.src = "public/MedGuide_2 Project.png";
+  }
+
+  function unhoverImage3(element) {
+    element.src = "public/MedGuide_1 Project.png";
+  }
+
+  // Ocultar tela de introdução após um determinado tempo
+  document.addEventListener("DOMContentLoaded", function () {
+    var splashScreen = document.getElementById("splash-screen");
+    if (splashScreen) {
+      var delay = 8000;
+
+      setTimeout(function () {
+        splashScreen.classList.add("hidden");
+
+        setTimeout(function () {
+          splashScreen.style.display = "none";
+        }, 1000);
+      }, delay);
+    }
+  });
+
+  // Manipulação do formulário
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("myForm");
+    const alertDialog = document.querySelector(".alert");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Obtenção e validação dos dados do formulário
+      const firstName = document.getElementById("first-name").value.trim();
+      const lastName = document.getElementById("last-name").value.trim();
+      const email = document.getElementById("e-mail").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+
+      // Exibição de alerta com base nas validações
+      if (firstName === "" || lastName === "" || message === "") {
+        alertDialog.style.backgroundColor = "red";
+        alertDialog.style.color = "white";
+        alertDialog.style.display = "flex";
+        alertDialog.innerHTML = "Certifique-se de preencher todos os campos.";
+      } else if (!email.match(emailRegex)) {
+        alertDialog.style.backgroundColor = "red";
+        alertDialog.style.color = "white";
+        alertDialog.style.display = "flex";
+        alertDialog.innerHTML = "Email inválido.";
+      } else {
+        alertDialog.style.backgroundColor = "green";
+        alertDialog.style.color = "white";
+        alertDialog.style.display = "flex";
+        alertDialog.innerHTML =
+          "Obrigado por enviar a mensagem! Siga-me no LinkedIn. <3";
+        form.reset();
+
+        // Ocultar alerta após um intervalo de tempo
+        setTimeout(function () {
+          alertDialog.style.display = "none";
+        }, 3000);
       }
+    });
+  });
 
-      function unhoverImage1(element) {
-        element.src = "public/HSM_P2.jpg";
-      }
+  // Animação de rolar para o topo da página
+  $(document).ready(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+</script>
 
-      function hoverImage2(element) {
-        element.src = "public/labourService_about_img.jpg";
-      }
-
-      function unhoverImage2(element) {
-        element.src = "public/labourService_P1.jpg";
-      }
-
-      function hoverImage3(element) {
-        element.src = "public/MedGuide_2 Project.png";
-      }
-
-      function unhoverImage3(element) {
-        element.src = "public/MedGuide_1 Project.png";
-      }
-
-    
-      document.addEventListener("DOMContentLoaded", function () {
-        var splashScreen = document.getElementById("splash-screen");
-        if (splashScreen) {
-          var delay = 8000;
-
-          setTimeout(function () {
-            splashScreen.classList.add("hidden");
-
-            setTimeout(function () {
-              splashScreen.style.display = "none";
-            }, 1000);
-          }, delay);
-        }
-      });
-
-    
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("myForm");
-        const alertDialog = document.querySelector(".alert");
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const firstName = document.getElementById("first-name").value.trim();
-          const lastName = document.getElementById("last-name").value.trim();
-          const email = document.getElementById("e-mail").value.trim();
-          const message = document.getElementById("message").value.trim();
-
-         
-          const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
-
-          if (firstName === "" || lastName === "" || message === "") {
-            alertDialog.style.backgroundColor = "red";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML =
-              "Certifique se escreveu certo.";
-          } else if (!email.match(emailRegex)) {
-            alertDialog.style.backgroundColor = "red";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML = "email invalido.";
-          } else {
-            alertDialog.style.backgroundColor = "green";
-            alertDialog.style.color = "white";
-            alertDialog.style.display = "flex";
-            alertDialog.innerHTML =
-              "Obg por me mandar msg !!! Me siga no linkedin. <3 ";
-            form.reset();
-
-            setTimeout(function () {
-              alertDialog.style.display = "none";
-            }, 3000);
-          }
-        });
-      });
-
-   
-      $(document).ready(function () {
-        $("html, body").animate(
-          {
-            scrollTop: 0,
-          },
-          1000
-        );
-      });
-    </script>
   </body>
 </html>
