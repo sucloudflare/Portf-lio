@@ -8,10 +8,13 @@ Recursos Destacados:
 
     HTML, CSS, JavaScript: Fundamentos sólidos de desenvolvimento web para
     criar uma interface intuitiva e atraente.
-    Em constante evolução: Estou sempre trabalhando para melhorar e adicionar novos projetos ao meu portfólio.
+    Em constante evolução: Estou sempre trabalhando para melhorar e adicionar
+    novos projetos ao meu portfólio.
+    
     Fique atento para as últimas atualizações!
     Futuro Angular: 
-    Estou empolgado em anunciar que em breve vou migrar para o framework Angular para aprimorar
+    Estou empolgado em anunciar que em breve vou migrar para o framework
+    Angular para aprimorar
     a funcionalidade e a escalabilidade do meu site.
 
 Sinta-se à vontade para explorar meu código-fonte e fornecer feedback. Seja bem-vindo ao meu espaço digital, onde compartilho minha jornada no desenvolvimento web e mostro meu amor pela criação de experiências online incríveis.
