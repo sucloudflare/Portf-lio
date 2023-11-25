@@ -1,54 +1,55 @@
-<!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Configuração básica do documento HTML -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <!-- Ícone da aba do navegador -->
     <link href="public\icon.png" rel="icon" type="image/gif" />
+
+    <!-- Folha de estilo para o layout -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Pré-conexão com o Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Back to top button styling-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Vina+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- /Back to top button styling-->
+
+    <!-- Estilos específicos para o botão "Back to top" -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- Carregamento de fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Vina+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Importação de bibliotecas e scripts externos -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script
-      src="https://kit.fontawesome.com/9fa51d37bd.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/9fa51d37bd.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
+    
     <a id="button"></a>
+
+    <!-- Estrutura da seção de cabeçalho -->
     <div class="header" id="home">
       <div class="logo">
+        <!-- Nome ou logotipo do site -->
         <h2>Bruno</h2>
         <h2>Bruno</h2>
       </div>
+
+      <!-- Container principal -->
       <div class="__container">
+        <!-- Barra de navegação -->
         <div class="navbar2">
           <div class="header2">
+            <!-- Lista de itens do menu -->
             <ul class="menu2">
               <li data-section="home">Home</li>
-              <li data-section="about">Sobre me</li>
+              <li data-section="about">Sobre mim</li>
               <li data-section="project">Projetos</li>
               <li data-section="skills">Skills</li>
               <li data-section="contact">Contato</li>
@@ -57,7 +58,6 @@
         </div>
       </div>
     </div>
-
     <div id="header-container">
       <div class="content">
         <h1>Hi, Eu sou Edson Bruno</h1>
@@ -126,7 +126,6 @@
       </div>
     </div>
 
-    <!-- Scroll Content -->
     <section class="wave-container">
       <h1 class="wave">
         <span style="--i: 1">E</span>
@@ -494,10 +493,10 @@
       </div>
     </footer>
 
-    <!-- Load library from the CDN -->
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <!-- Setup and start animation! -->
+  
     <script>
       var typed = new Typed("#element", {
         strings: ["Frontend Engineer", "Web Designer", "Frontend Developer"],
@@ -507,7 +506,7 @@
         loop: true,
       });
 
-      // project image section
+  
       function hoverImage1(element) {
         element.src = "public/HSM_registration_img.jpg";
       }
@@ -532,7 +531,7 @@
         element.src = "public/MedGuide_1 Project.png";
       }
 
-      // JavaScript to hide the splash screen when the page is fully loaded
+    
       document.addEventListener("DOMContentLoaded", function () {
         var splashScreen = document.getElementById("splash-screen");
         if (splashScreen) {
@@ -548,7 +547,7 @@
         }
       });
 
-      // Contact form submission
+    
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("myForm");
         const alertDialog = document.querySelector(".alert");
@@ -561,7 +560,7 @@
           const email = document.getElementById("e-mail").value.trim();
           const message = document.getElementById("message").value.trim();
 
-          // Regular expression for a valid email address format ending with gmail.com
+         
           const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
 
           if (firstName === "" || lastName === "" || message === "") {
@@ -590,7 +589,7 @@
         });
       });
 
-      // scroll to top when reloaded
+   
       $(document).ready(function () {
         $("html, body").animate(
           {
