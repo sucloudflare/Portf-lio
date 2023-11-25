@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:wght@700&display=swap");
 
-/* Montserrat Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat&family=Poppins:wght@700&display=swap");
 
-/* Trirong Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat&family=Poppins:wght@700&family=Trirong:wght@100&display=swap");
 
-/* Merriweather Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:wght@300&family=Montserrat&family=Poppins:wght@700&family=Trirong:wght@100&display=swap");
 font-family: "Heebo", sans-serif;
 font-family: "Vina Sans", sans-serif;
@@ -54,7 +54,6 @@ body {
   z-index: 99;
 }
 
-/* Navbar animation start */
 .header2 {
   width: 100%;
   height: 40px;
@@ -121,8 +120,7 @@ body {
   width: 100%;
   height: 100%;
   border-color: var(--color2);
-}
-/* navbar animation end */
+
 
 .logo {
   font-family: Vina Sans;
@@ -136,7 +134,7 @@ body {
   align-items: center;
 }
 
-/* logo animation start */
+
 
 .logo h2 {
   position: absolute;
@@ -184,7 +182,7 @@ body {
   }
 }
 
-/* logo animation end */
+
 
 #header-container {
   width: 100%;
@@ -253,7 +251,6 @@ body {
   transition: color 1s ease;
 }
 
-/* resume button start */
 
 .resume {
   width: 100px;
@@ -298,9 +295,7 @@ a {
 .text:hover {
   color: var(--color5);
 }
-/* resume button end */
 
-/* Start of Card Flip animation */
 .card {
   width: 17em;
   height: 17em;
@@ -343,7 +338,7 @@ a {
   );
   transform: rotateY(180deg);
 }
-/* End of Card Flip animation */
+
 
 .back ul {
   position: absolute;
@@ -358,7 +353,7 @@ a {
   position: absolute;
   top: 2rem;
 }
-/* wave animation for scroll section */
+
 
 .wave {
   font-family: var(--font3);
@@ -402,7 +397,7 @@ a {
   font-size: 50px;
 }
 
-/* Scroll animation start */
+
 .wave-container {
   width: 100%;
   text-align: center;
@@ -451,7 +446,7 @@ section .container {
   border-radius: 10px;
 }
 
-/* arrow animation starts */
+
 .arrow {
   position: absolute;
   top: 170%;
@@ -487,7 +482,6 @@ section .container {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
-/* arrow animation ends */
 
 section h1 {
   font-size: 3rem;
@@ -604,9 +598,7 @@ section .text-box {
   background: var(--color4);
   color: var(--color2);
 }
-/* Scroll animation ends */
 
-/* Back to top button start */
 #button {
   display: inline-block;
   background-color: transparent;
@@ -647,7 +639,7 @@ section .text-box {
   visibility: visible;
 }
 
-/* project-section effect start */
+
 .letter {
   font-family: var(--font3);
   font-size: 3em;
@@ -798,7 +790,7 @@ hr {
   opacity: 0;
 }
 
-/* smoke effect start */
+
 .splash-content::before {
   content: "";
   position: fixed;
@@ -895,9 +887,7 @@ h1 span:nth-child(11) {
 h1 span:nth-child(12) {
   animation-delay: 3.6s;
 }
-/* smoke effect end */
 
-/* footer start */
 .footer-container {
   width: 100%;
   display: flex;
@@ -932,9 +922,7 @@ h1 span:nth-child(12) {
 .footer-icons a i:hover {
   color: var(--color5);
 }
-/* footer end */
 
-/* about start */
 .about-container {
   padding: 10rem;
   display: flex;
@@ -985,9 +973,6 @@ h1 span:nth-child(12) {
   font-family: var(--font1);
 }
 
-/* about end */
-
-/* contact start */
 main {
   display: flex;
   flex-direction: column;
@@ -1163,16 +1148,11 @@ textarea:not(:placeholder-shown) ~ label {
   font-family: var(--font1);
 }
 
-/* contact end */
 
-/* media query start */
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* below 600 */
-  /* Navbar responsiveness start */
+ 
   .header {
-    /* display: none; */
+ 
     flex-direction: column;
     height: 5em;
   }
@@ -1231,9 +1211,7 @@ textarea:not(:placeholder-shown) ~ label {
     height: 17em;
   }
 
-  /* Homepage responsiveness ends */
 
-  /* Aboutpage responsiveness start */
   .about-container {
     flex-direction: column;
     justify-content: center;
@@ -1251,9 +1229,7 @@ textarea:not(:placeholder-shown) ~ label {
     font-size: 1.6rem;
     text-align: center;
   }
-  /* Aboutpage responsiveness ends */
-
-  /* scroll-wave-page responsiveness ends */
+ 
   .wave {
     font-size: 2em;
   }
@@ -1264,9 +1240,7 @@ textarea:not(:placeholder-shown) ~ label {
     width: 3vw;
     height: 3vw;
   }
-  /* scroll-wave-page responsiveness ends */
 
-  /* projectpage responsiveness starts */
   .text-box {
     margin: 0;
     padding: 0;
@@ -1305,9 +1279,7 @@ textarea:not(:placeholder-shown) ~ label {
     font-size: 1em;
     margin: 0.3em 0;
   }
-  /* projectpage responsiveness ends */
-
-  /* skillspage responsiveness starts */
+ 
   .skills ul {
     margin: 0;
   }
@@ -1328,16 +1300,12 @@ textarea:not(:placeholder-shown) ~ label {
       transform: translateX(-900px);
     }
   }
-  /* skillspage responsiveness ends */
-
-  /* alert responsiveness starts */
+ 
   .alert {
     width: 80%;
     font-size: 0.9em;
   }
-  /* alert responsiveness ends */
 
-  /* footerpage responsiveness starts */
   .footer-container {
     display: block;
     text-align: center;
@@ -1352,9 +1320,7 @@ textarea:not(:placeholder-shown) ~ label {
   .content hr {
     margin: 1em 0;
   }
-  /* footerpage responsiveness ends */
 
-  /* splashscreen responsiveness starts */
   .splash-content h1 {
     font-size: 3em;
     line-height: 1.5em;
@@ -1363,12 +1329,11 @@ textarea:not(:placeholder-shown) ~ label {
     background-size: contain;
     max-width: 100%;
   }
-  /* splashscreen responsiveness starts */
+
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media (min-width: 600px) and (max-width: 850px) {
-  /* above 600 */
-  /* Navbar responsiveness start */
+ 
   .header {
     flex-direction: column;
     height: 6em;
@@ -1385,9 +1350,7 @@ textarea:not(:placeholder-shown) ~ label {
     font-size: 1.3em;
     padding: 1em;
   }
-  /* Navbar responsiveness ends */
-
-  /* Homepage responsiveness start */
+ 
   #header-container {
     margin-top: 9em;
     flex-direction: column-reverse;
@@ -1426,9 +1389,7 @@ textarea:not(:placeholder-shown) ~ label {
     height: 17em;
   }
 
-  /* Homepage responsiveness ends */
 
-  /* Aboutpage responsiveness start */
   .about-container {
     flex-direction: column;
     justify-content: center;
@@ -1447,9 +1408,7 @@ textarea:not(:placeholder-shown) ~ label {
   .about-content h1 {
     text-align: center;
   }
-  /* Aboutpage responsiveness ends */
-
-  /* scroll-wave-page responsiveness ends */
+  
   .wave {
     font-size: 3em;
   }
@@ -1457,9 +1416,7 @@ textarea:not(:placeholder-shown) ~ label {
     width: 2.5vw;
     height: 2.5vw;
   }
-  /* scroll-wave-page responsiveness ends */
 
-  /* projectpage responsiveness starts */
   .text-box {
     margin: 0;
     padding: 0;
@@ -1496,9 +1453,7 @@ textarea:not(:placeholder-shown) ~ label {
   .project-links .tags {
     margin: 0.3em 0;
   }
-  /* projectpage responsiveness ends */
 
-  /* skillspage responsiveness starts */
   .skills ul {
     margin: 0;
   }
@@ -1519,17 +1474,13 @@ textarea:not(:placeholder-shown) ~ label {
       transform: translateX(-1100px);
     }
   }
-  /* skillspage responsiveness ends */
-
-  /* alert responsiveness starts */
+  
   .alert {
     width: 50%;
     font-size: 1em;
     margin-bottom: 1em;
   }
-  /* alert responsiveness ends */
-
-  /* footerpage responsiveness starts */
+ 
   .footer-container {
     display: block;
     text-align: center;
@@ -1544,9 +1495,7 @@ textarea:not(:placeholder-shown) ~ label {
   .content hr {
     margin: 1em 0;
   }
-  /* footerpage responsiveness ends */
-
-  /* splashscreen responsiveness starts */
+ 
   .splash-content h1 {
     font-size: 6em;
     line-height: 1.5em;
@@ -1554,12 +1503,12 @@ textarea:not(:placeholder-shown) ~ label {
   #splash-screen {
     background-size: contain;
   }
-  /* splashscreen responsiveness ends */
+  
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media (min-width: 850px) and (max-width: 1200px) {
-  /* Navbar responsiveness start */
+
   .header {
     height: 4em;
   }
@@ -1572,9 +1521,7 @@ textarea:not(:placeholder-shown) ~ label {
     padding: 1em;
   }
 
-  /* Navbar responsiveness ends */
-
-  /* Homepage responsiveness start */
+  
   #header-container {
     margin-top: 9em;
     flex-direction: column-reverse;
@@ -1611,9 +1558,7 @@ textarea:not(:placeholder-shown) ~ label {
     height: 17em;
   }
 
-  /* Homepage responsiveness ends */
-
-  /* Aboutpage responsiveness start */
+  
   .about-container {
     flex-direction: column;
     justify-content: center;
@@ -1633,9 +1578,7 @@ textarea:not(:placeholder-shown) ~ label {
     margin-bottom: 0.5em;
     text-align: center;
   }
-  /* Aboutpage responsiveness ends */
-
-  /* scroll-wave-page responsiveness ends */
+  
   .wave {
     font-size: 3em;
   }
@@ -1643,9 +1586,7 @@ textarea:not(:placeholder-shown) ~ label {
     width: 1.8vw;
     height: 1.8vw;
   }
-  /* scroll-wave-page responsiveness ends */
 
-  /* projectpage responsiveness starts */
   .text-box {
     margin: 0;
     padding: 0;
@@ -1684,9 +1625,7 @@ textarea:not(:placeholder-shown) ~ label {
   .project-links .tags {
     margin: 0.3em 0;
   }
-  /* projectpage responsiveness ends */
-
-  /* skillspage responsiveness starts */
+ 
   .skills ul {
     margin: 0;
   }
@@ -1707,22 +1646,16 @@ textarea:not(:placeholder-shown) ~ label {
       transform: translateX(-1100px);
     }
   }
-  /* skillspage responsiveness ends */
-
-  /* alert responsiveness starts */
+ 
   .alert {
     width: 50%;
     font-size: 1em;
   }
-  /* alert responsiveness ends */
-
-  /* footerpage responsiveness starts */
+ 
   .footer-content {
     font-size: 1.3em;
   }
-  /* footerpage responsiveness ends */
-
-  /* splashscreen responsiveness starts */
+  
   .splash-content h1 {
     font-size: 6.5em;
     line-height: 1.2em;
@@ -1730,6 +1663,6 @@ textarea:not(:placeholder-shown) ~ label {
   #splash-screen {
     background-size: contain;
   }
-  /* splashscreen responsiveness ends */
+ 
 }
-/* media query end */
+
