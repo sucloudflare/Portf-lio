@@ -1,4 +1,4 @@
-# Portf-lio
+# Portfolio
 "Portfolio-Web: HTML, CSS, JS. Em breve, Angular. Explore minha jornada no desenvolvimento web. 💻✨"
 Nome do Projeto: Portfolio-Web
 
