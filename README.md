@@ -11,7 +11,7 @@ Bem-vindo ao meu repositório de portfólio! 🌟 Aqui, você encontrará uma co
 - JavaScript
 
 ## Projetos Destacados
-1. [Projeto 1](edsonbruno.kesug.com): Meu Portfólio 
+1. [Projeto 1](http://edsonbruno.kesug.com): Meu Portfólio 
 
 ## Em Breve: Angular! 🚀
 Estou animado em anunciar que em breve vou atualizar este portfólio usando o framework Angular, trazendo uma experiência ainda mais dinâmica e moderna.
